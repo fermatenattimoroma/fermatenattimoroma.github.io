@@ -38,7 +38,7 @@
     "title_en": "Quick lunch",
     "text_it": "Tramezzini, toast, panini e pizza farcita.",
     "text_en": "Tramezzini, toasties, sandwiches and stuffed pizza.",
-    "img": "banco",
+    "img": "gastronomia-tramezzini",
     "link": "menu/pranzi"
    },
    {
@@ -341,8 +341,8 @@
     "title_en": "Lunch",
     "intro_it": "Gastronomia calda e fredda per una pausa veloce in centro.",
     "intro_en": "Hot and cold deli for a quick break in the centre.",
-    "img": "banco",
-    "img2": "vassoi",
+    "img": "gastronomia-tramezzini",
+    "img2": "gastronomia-pizzette",
     "sections": [
      {
       "title_it": "Gastronomia",
@@ -649,6 +649,7 @@
    "circo",
    "banco",
    "cornetti",
+   "gastronomia-pizzette",
    "negroni-bancone",
    "tabacchi",
    "statua-profilo",
@@ -704,7 +705,10 @@
   "rovine-sera": "img/rovine-sera.jpg",
   "spritz-arance": "img/spritz-arance.jpg",
   "spritz-bar": "img/spritz-bar.jpg",
-  "statua-profilo": "img/statua-profilo.jpg"
+  "statua-profilo": "img/statua-profilo.jpg",
+  "gastronomia-tramezzini": "gastronomia-tramezzini.jpg",
+  "gastronomia-pizzette": "gastronomia-pizzette.jpg",
+  "gastronomia-salmone": "gastronomia-salmone.jpg"
  },
  "admin": {
   "hash": "8bebc388bbec4dccbc54bc54c8624e8c1260d3603dcbfa0435106c4bf6782cea",
