@@ -591,7 +591,7 @@ function vHome(){
     ${slides(h.slides)}
     <div class="veil"></div>
     <figure class="hero-arch st arch" style="--d:3;margin:0">${(h.arch_slides&&h.arch_slides.length>1) ? rot(h.arch_slides,'') : duo(h.arch1||'statua-profilo', h.arch2||'negroni-bancone','')}<figcaption>FESTINA · LENTE</figcaption></figure>
-    <div class="hero-meta"><span class="num" data-slidenum>I</span><span>41°53′ N · 12°29′ E</span><span>Roma</span></div>
+    <div class="hero-meta"><span>41°53′ N · 12°29′ E</span><span>Roma</span></div>
     <div class="wrap hero-in">
       <p class="eyebrow st" style="--d:0">${esc(T(C.brand,'eyebrow'))}</p>
       <img class="hero-logo st" style="--d:1" src="img/logo-avorio.png" alt="Fermate n'attimo Roma" width="900" height="707">
@@ -607,7 +607,7 @@ function vHome(){
     <div class="moments">${ms.map((m,i)=>`
       <a class="moment ${i===act?'now':''}" href="#${esc(String(m.link||'menu').replace('/','-'))}">
         ${i===act?`<span class="now-tag">${u('now')}</span>`:''}
-        <div class="time">${esc(m.time)}<sup>${roman(i+1)}</sup></div>
+        <div class="time">${esc(m.time)}</div>
         ${(m.slides&&m.slides.length>1) ? rot(m.slides, T(m,'title')) : ph(m.img, T(m,'title'))}
         <h3>${esc(T(m,'title'))}</h3><p>${esc(T(m,'text'))}</p>
       </a>`).join('')}</div>
@@ -624,8 +624,8 @@ function vHome(){
 
   <section class="band"><div class="wrap">
     <div class="sec-head"><p class="eyebrow">${u('highlights')}</p></div>
-    <div class="highlights">${(h.highlights||[]).map((x,i)=>`<div class="hl"><span class="num">${roman(i+1)}</span><h3>${esc(T(x,'title'))}</h3><p>${esc(T(x,'text'))}</p></div>`).join('')}
-      <div class="hl"><span class="num">${roman((h.highlights||[]).length+1)}</span><h3>${esc(C.contatti.address)}</h3><p>${groupedHours().map(([a,b])=>esc(a)+' · '+esc(b)).join('<br>')}</p><a class="btn small ghost" style="justify-self:start;margin-top:6px" href="#contatti">${u('contatti')} <span class="arrow"></span></a></div>
+    <div class="highlights">${(h.highlights||[]).map((x,i)=>`<div class="hl"><h3>${esc(T(x,'title'))}</h3><p>${esc(T(x,'text'))}</p></div>`).join('')}
+      <div class="hl"><h3>${esc(C.contatti.address)}</h3><p>${groupedHours().map(([a,b])=>esc(a)+' · '+esc(b)).join('<br>')}</p><a class="btn small ghost" style="justify-self:start;margin-top:6px" href="#contatti">${u('contatti')} <span class="arrow"></span></a></div>
     </div>
   </div></section>`;
 }
