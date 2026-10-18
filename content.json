@@ -22,6 +22,22 @@
   ],
   "arch1": "statua-profilo",
   "arch2": "spritz-bar",
+  "arch_slides": [
+   "statua-profilo",
+   "primo-carbonara",
+   "negroni-bancone",
+   "busto-ombra",
+   "pasticceria-specialita",
+   "spritz-bar",
+   "colonne",
+   "gintonic-rosmarino",
+   "busto-architettura",
+   "cornetti-dall-alto",
+   "rovine-sera",
+   "tagliere-prosciutto",
+   "circo",
+   "secondo-filetto"
+  ],
   "moments": [
    {
     "time": "06:00",
