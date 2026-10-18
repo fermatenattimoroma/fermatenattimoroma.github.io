@@ -220,7 +220,9 @@ a:hover .ph img,.ph:hover img{transform:scale(1.045);filter:saturate(1) contrast
 .item .pr i{font-style:normal;font-size:.8em;color:var(--oro);margin-right:4px}
 .cgroup-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .mfoot{color:var(--fumo-2);font-size:.86rem;border-top:1px solid var(--linea);padding-top:18px}
-@media (max-width:900px){.mbody{grid-template-columns:1fr}.mside{position:static;grid-row:1}.mside .ph{aspect-ratio:16/10}}
+@media (max-width:900px){.mbody{grid-template-columns:1fr;padding-top:34px}.mside{display:none}.mtabs .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;overflow:visible;padding-block:10px}.mtab{flex-direction:column;justify-content:center;text-align:center;padding:8px 2px;gap:6px;border-radius:14px}.mtab .ic{width:38px;height:38px}.mtab small{display:none}.mtab b{font-size:.62rem;letter-spacing:.12em}}
+.qbar{display:none}
+@media (max-width:900px){.qbar{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(14,13,11,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--linea);padding:8px max(10px, env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(10px, env(safe-area-inset-left,0px));gap:8px}.qbar a{display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--avorio);padding:6px 0;border-radius:12px}.qbar a:first-child{background:var(--oro);color:var(--nero)}.qbar svg{width:20px;height:20px}footer{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}.toast{bottom:calc(env(safe-area-inset-bottom,0px) + 84px)}}
 
 /* ---------- cocktail page ---------- */
 .ck-hero{min-height:min(80vh,780px)}
@@ -386,6 +388,7 @@ label.f{display:grid;gap:6px;font-size:.78rem;letter-spacing:.14em;text-transfor
   </div>
 </header>
 <div class="drawer" id="drawer" hidden></div>
+<nav class="qbar" id="qbar" aria-label="Azioni rapide"></nav>
 <main id="main"></main>
 <footer id="footer"></footer>
 <div class="lightbox" id="lb" hidden></div>
@@ -557,6 +560,8 @@ document.addEventListener('click', e => {
 
 function renderFooter(){
   const c = C.contatti;
+  const ic = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">${d}</svg>`;
+  $('#qbar').innerHTML = `<a href="tel:+39${esc(String(c.tel).replace(/\D/g,''))}">${ic('<path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/>')}${u('call')}</a><a href="https://wa.me/${esc(c.whatsapp)}" target="_blank" rel="noopener">${ic('<path d="M4 20l1.3-4A8 8 0 1 1 8 19.2z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/>')}WhatsApp</a><a href="${esc(c.maps)}" target="_blank" rel="noopener">${ic('<path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>')}${L==='en'?'Directions':'Indicazioni'}</a>`;
   $('#footer').innerHTML = `${skyline('fsky')}
   <div class="wrap fgrid">
     <div><img src="img/logo-oro.png" alt="Fermate n'attimo Roma" width="200" height="157"><p style="margin-top:14px">${esc(T(C.brand,'tagline'))}</p></div>
