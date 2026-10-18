@@ -27,25 +27,34 @@
     "time": "06:00",
     "title_it": "Colazione",
     "title_en": "Breakfast",
-    "text_it": "Cappuccino, cornetti sfornati e pasticceria da banco.",
-    "text_en": "Cappuccino, fresh croissants and pastries.",
+    "text_it": "Cappuccino, cornetti sfornati, maritozzi, cannoli e sfogliatelle.",
+    "text_en": "Cappuccino, fresh croissants, maritozzi, cannoli and sfogliatelle.",
     "img": "cornetti-dall-alto",
-    "link": "menu/colazioni"
+    "link": "menu/colazioni",
+    "slides": [
+     "cornetti-dall-alto",
+     "pasticceria-specialita",
+     "cappuccino-cornetto",
+     "cornetti",
+     "vassoi"
+    ]
    },
    {
     "time": "12:00",
     "title_it": "Pranzo",
     "title_en": "Lunch",
-    "text_it": "Primi e secondi della tradizione romana, omelette, tramezzini e pizza farcita.",
-    "text_en": "Traditional Roman first and main courses, omelettes, tramezzini and stuffed pizza.",
+    "text_it": "Piatti caldi preparati espressi: primi e secondi della tradizione romana. E per chi ha fretta, tramezzini, toast e pizza farcita.",
+    "text_en": "Hot dishes made to order: traditional Roman first and main courses. In a hurry? Tramezzini, toasties and stuffed pizza.",
     "img": "primo-carbonara",
     "link": "menu/pranzi",
     "slides": [
      "primo-carbonara",
      "gastronomia-tramezzini",
      "secondo-filetto",
+     "gastronomia-pizzette",
      "primo-cacio-e-pepe",
-     "tagliere-prosciutto"
+     "tagliere-prosciutto",
+     "primo-amatriciana"
     ]
    },
    {
@@ -55,7 +64,15 @@
     "text_it": "Cocktail, spritz e calici al tramonto sul Circo Massimo.",
     "text_en": "Cocktails, spritz and wine at sunset over the Circus Maximus.",
     "img": "negroni-marmo",
-    "link": "cocktail"
+    "link": "cocktail",
+    "slides": [
+     "negroni-marmo",
+     "spritz-arance",
+     "gintonic-rosmarino",
+     "calici",
+     "negroni-bancone",
+     "spritz"
+    ]
    }
   ],
   "highlights": [
@@ -382,16 +399,16 @@
     "id": "pranzi",
     "title_it": "Pranzi",
     "title_en": "Lunch",
-    "intro_it": "A pranzo, la Roma di sempre: primi e secondi della tradizione, cucinati ogni giorno a due passi dal Circo Massimo.",
-    "intro_en": "At lunch, the Rome of always: traditional first and main courses, cooked every day a stone’s throw from the Circus Maximus.",
+    "intro_it": "A pranzo, la Roma di sempre: piatti caldi preparati espressi, primi e secondi della tradizione, a due passi dal Circo Massimo.",
+    "intro_en": "At lunch, the Rome of always: hot dishes made to order, traditional first and main courses, a stone’s throw from the Circus Maximus.",
     "img": "primo-carbonara",
     "img2": "secondo-filetto",
     "sections": [
      {
       "title_it": "La cucina della tradizione",
       "title_en": "Traditional kitchen",
-      "note_it": "Proposta del giorno",
-      "note_en": "Dish of the day",
+      "note_it": "Piatti caldi preparati espressi",
+      "note_en": "Hot dishes made to order",
       "items": [
        {
         "name": "Primi della tradizione",
