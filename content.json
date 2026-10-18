@@ -27,7 +27,7 @@
    "primo-carbonara",
    "negroni-bancone",
    "busto-ombra",
-   "pasticceria-specialita",
+   "pasticceria-arco",
    "spritz-bar",
    "colonne",
    "gintonic-rosmarino",
@@ -49,7 +49,7 @@
     "link": "menu/colazioni",
     "slides": [
      "cornetti-dall-alto",
-     "pasticceria-specialita",
+     "pasticceria-arco",
      "cappuccino-cornetto",
      "cornetti",
      "vassoi"
@@ -172,7 +172,7 @@
     "intro_it": "Dalle 6 del mattino: caffetteria, pasticceria e spremute.",
     "intro_en": "From 6 am: coffee bar, pastries and fresh juices.",
     "img": "cornetti",
-    "img2": "pasticceria-specialita",
+    "img2": "pasticceria-arco",
     "sections": [
      {
       "title_it": "Caffetteria",
@@ -846,7 +846,8 @@
   "primo-cacio-e-pepe": "img/primo-cacio-e-pepe.jpg",
   "primo-pappardelle": "img/primo-pappardelle.jpg",
   "secondo-filetto": "img/secondo-filetto.jpg",
-  "tagliere-prosciutto": "img/tagliere-prosciutto.jpg"
+  "tagliere-prosciutto": "img/tagliere-prosciutto.jpg",
+  "pasticceria-arco": "img/pasticceria-arco.jpg"
  },
  "admin": {
   "hash": "8bebc388bbec4dccbc54bc54c8624e8c1260d3603dcbfa0435106c4bf6782cea",
